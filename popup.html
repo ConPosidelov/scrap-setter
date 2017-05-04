@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+ <link href="style/bootstrap.min.css" rel="stylesheet">
+  <link href="style/popup_style.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+    <div id="container" class="container"> 
+
+        <div class="tabbable"> 
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab1" data-toggle="tab">All records</a></li>
+                <li><a href="#tab2" data-toggle="tab">Projects</a></li>
+                <li><a href="#tab3" data-toggle="tab">Раздел 3</a></li>
+                <li><a href="#tab4" data-toggle="tab">Settings</a></li>
+
+             </ul>
+            <div class="tab-content">
+                <div id="tab1" class="tab-pane  projectsTab active">
+                    <div class="projCtrls">
+                
+                        <div class="row">
+                            <div class="tab1_nav">
+                                
+                                <div id ="skip_prev" class="btn btn-default btn-xs material-ic play_ctr" type='button'>
+                                    skip_previous
+                                </div>
+                                <div id ="fast_rewind" class="btn btn-default btn-xs material-ic play_ctr" type='button'>
+                                   fast_rewind
+                                </div>
+                                <h4 class="play_state">
+                                   <span  id ="play_state" class="label label-default">16-30</span>
+                                </h4>
+                                <div id ="fast_forward" class="btn btn-default btn-xs material-ic play_ctr" type='button'>
+                                    fast_forward
+                                </div>
+                                <div id ="skip_next" class="btn btn-default btn-xs material-ic play_ctr" type='button'>
+                                    skip_next
+                                </div>
+
+                                  
+                            </div>
+                            <div id="mess_tab1" class="mess_tab1">
+                                <h4>Delete checked elements?</h4>
+                                <button class='btn  btn-warning btn-xs btn_ok' type='button'>
+                                  OK
+                                </button>
+
+                               <!-- <button class='btn btn-success btn-xs btn_no' type='button'>
+                                  NO
+                                </button> -->
+                            </div>
+                            <div class="tab1_search">
+                                <div id="searchCon" class="data_title"  data-title="Filter by letter">
+                                    <input class="s_bykey" type="text">
+                                    <div id="searchBtn" class="material-icons">search</div>
+                                </div> 
+
+                            </div>
+                        </div><!--end row -->
+
+                        <div class="row">
+                            <div id="tab1_titles_list" class="tab1_titles_list">
+
+                                <div class="tab_title proj_title">
+                                    <h5>Project</h5>
+                                    <div class='btn btn-default btn-xs material-ic expand_less' type='button'>
+                                        expand_less
+                                    </div>
+                                    <div class='btn btn-default btn-xs material-ic expand_more' type='button'>
+                                        expand_more
+                                    </div> 
+                                </div>
+
+                                <div class="tab_title url_title">
+                                    <h5>Url</h5>
+                                    <div class='btn btn-default btn-xs material-ic expand_less' type='button'>
+                                        expand_less
+                                    </div>
+                                    <div class='btn btn-default btn-xs material-ic expand_more' type='button'>
+                                        expand_more
+                                    </div> 
+                                </div>
+
+                                <div class="tab_title name_title">
+                                    <h5>Name</h5>
+                                    <div class='btn btn-default btn-xs material-ic expand_less' type='button'>
+                                        expand_less
+                                    </div>
+                                    <div class='btn btn-default btn-xs material-ic expand_more' type='button'>
+                                        expand_more
+                                    </div> 
+                                </div>
+
+                                <div class="tab_title cont_title">
+                                    <h5>Content</h5>
+                                </div>
+
+                                <!--<div class="tab_title sel_title">
+                                    <h5>Selector</h5>
+                                </div>
+                                <div class="tab_title ref_title">
+                                    <h5>Ref</h5>
+                                </div>-->
+
+                            </div> 
+                        </div><!--end row -->
+
+
+                    </div><!--end projCtrls -->
+                    <div class="row projContent">       
+                    </div>
+                </div><!--end tab1 -->
+
+                <div id="tab2" class="tab-pane">
+                  <div class="projCtrls">
+                
+                        <div class="row">
+                            <div class="tab1_nav">
+                                
+                                <div id ="skip_prevT2" class="btn btn-default btn-xs material-ic play_ctr" type='button'>
+                                    skip_previous
+                                </div>
+                                <div id ="fast_rewindT2" class="btn btn-default btn-xs material-ic play_ctr" type='button'>
+                                   fast_rewind
+                                </div>
+                                <h4 class="play_state">
+                                   <span  id ="play_stateT2" class="label label-default">16-30</span>
+                                </h4>
+                                <div id ="fast_forwardT2" class="btn btn-default btn-xs material-ic play_ctr" type='button'>
+                                    fast_forward
+                                </div>
+                                <div id ="skip_nextT2" class="btn btn-default btn-xs material-ic play_ctr" type='button'>
+                                    skip_next
+                                </div>
+
+                                  
+                            </div>
+                            <div id="mess_tab2" class="mess_tab1">
+                                <h4>Delete checked elements?</h4>
+                                <button class='btn  btn-warning btn-xs btn_ok' type='button'>
+                                  OK
+                                </button>
+
+                               <!-- <button class='btn btn-success btn-xs btn_no' type='button'>
+                                  NO
+                                </button> -->
+                            </div>
+                            <div class="tab1_search">
+                                <div id="searchConT2" class="data_title"  data-title="Filter by letter">
+                                    <input class="s_bykey" type="text">
+                                    <div id="searchBtnT2" class="material-icons">search</div>
+                                </div> 
+
+                            </div>
+                        </div><!--end row -->
+
+                        <div class="row">
+                            <div id="tab2_titles_list" class="tab1_titles_list">
+
+                                <div class="tab_title proj_title">
+                                    <h5>Project</h5>
+                                    <div class='btn btn-default btn-xs material-ic expand_less' type='button'>
+                                        expand_less
+                                    </div>
+                                    <div class='btn btn-default btn-xs material-ic expand_more' type='button'>
+                                        expand_more
+                                    </div> 
+                                </div>
+                  
+
+                                
+
+                            </div> 
+                        </div><!--end row -->
+
+
+                    </div><!--end projCtrls -->
+                    <div class="row projContent">       
+                    </div>    
+
+                </div><!--end tab2 -->
+                <div id="tab3" class="tab-pane">
+                  
+                </div><!--end tab3 -->
+                <div id="tab4" class="tab-pane settingsTab">
+                  
+                </div><!--end tab4 -->
+
+
+          </div>
+        </div>
+
+
+
+
+    </div><!-- end container -->
+
+
+
+
+
+
+
+
+
+ 
+  <script src="js/lib/lodash.min.js"></script>
+  <script src="js/lib/jquery.js"></script>
+  <script src="js/lib/bootstrap.min.js"></script>
+  <script src="js/popup.js"></script>    
+
+
+</body>
+
+</html

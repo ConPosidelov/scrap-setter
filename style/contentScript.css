@@ -1,0 +1,394 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v11/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+}
+.material-icons {
+  font-family: 'Material Icons' !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.hover_sel:hover {
+    color: red;
+    border: 1px solid red;
+}
+
+
+
+#myW2_offon {
+     box-sizing: border-box !important;
+     z-index: 9999;
+     width: 50px;
+     height: 40px;
+     border-radius: 8px 0 0 8px;
+     position: fixed;
+     top: 20%;
+     right: -35px;
+     line-height: 40px;
+     font-size: 18px;
+     padding-left: 8px;
+     box-shadow: -3px 3px 10px 0px rgba(50, 50, 50, 0.5);
+     color: #00B2EE;
+     background: #00B2EE ; 
+     cursor: pointer;
+     transition: right 0.6s;  
+}
+
+#myW2_offon:hover {
+    right: 0;
+    background: #F0FFFF ;
+    transition: right 0.6s;
+}
+
+#myW2_offon.active {
+     box-sizing: border-box !important;
+     cursor: pointer;
+     background:  #7FFFD4;
+      
+}
+
+/* Второе окно ==============================================
+==============================================================
+================================================================ */
+
+
+
+/*============= 2nd Window===========================*/
+
+.myW2Win .myW2icon {
+    box-sizing: border-box !important;
+    width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      font-size: 24px;
+      text-align: center;
+      line-height: 40px;
+      color: RGB(100%, 100%, 100%);
+      background-color: #b3e7fb;
+            
+}
+
+.myW2Win .myW2icon_small{
+      width: 30px !important;
+      height: 30px !important;
+      line-height: 30px !important;
+      font-size: 16px !important;
+      font-weight: 600 !important;
+
+}
+.myW2Win .myW2button {
+    cursor: pointer;
+}
+.myW2Win .myW2button:hover {
+    background-color: #19B5FE;
+}
+
+
+.myW2Win {
+    display: none;
+    box-sizing: border-box !important;
+    position: fixed;
+    border-radius: 10px;
+    box-shadow: 0px 6px 25px 0px rgba(50, 50, 50, 0.48);
+    z-index: 999;
+    
+}
+
+.myW2Win.active {
+    display: block;
+}
+
+.myW2WinInner {
+    box-sizing: border-box !important;
+    
+    border-radius: 10px;
+    /*
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+    */
+    
+}
+.myW2_handle {
+    box-sizing: border-box !important;
+    width: 100%;
+    height: 50px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+   background-color: #b3e7fb;
+   cursor: move;
+
+   position: relative;
+   
+}
+
+
+.myW2WinSection {
+    box-sizing: border-box !important;
+    width: 100%;
+    /*min-height: 100px; */    
+    background: #F0FFFF ;
+    -ms-text-align-last: auto;
+    text-align:left;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.myW2WinSection>p {
+    margin-left: 10px !important;
+    text-align:left;
+    word-wrap: break-word;
+}
+
+.myW2WinSection .myW2icon {
+    
+    /*margin-left: calc(50% - 8px);*/
+    margin-top: 12px !important;
+}
+
+.myW2Letter {
+    
+    background: RGBA(210, 215, 211, 0.5);
+    z-index: 55;   
+}
+
+.myW2_handle .tabList {
+    position: absolute;
+    top: 20;
+    left: 0;
+    z-index: 5;
+}
+
+.myW2_handle .tabList li{
+    float: left;
+    display: block;
+    padding: 0 6px;
+    margin-left: 1px;
+    margin-top: 20px;
+    height: 30px;
+    
+    font-size: 16px;
+    color: RGBA(51, 110, 123, 1.0);
+    text-transform: uppercase;
+    line-height: 30px;
+    text-align: center;
+    z-index: 5;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    cursor: pointer;
+
+}
+
+#myW2TabBtn1 {
+    background: RGBA(200, 247, 197, 1.0);
+    border-right: 1px solid RGBA(200, 247, 197, 1.0);
+    border-left: 1px solid RGBA(200, 247, 197, 1.0);
+    border-top: 1px solid RGBA(200, 247, 197, 1.0);
+
+}
+#myW2TabBtn2 {
+    background: RGBA(134, 226, 213, 1.0);
+    border-right: 1px solid RGBA(134, 226, 213, 1.0);
+    border-left: 1px solid RGBA(134, 226, 213, 1.0);
+    border-top: 1px solid RGBA(134, 226, 213, 1.0);
+}
+
+#myW2TabBtn3 {
+    background: RGBA(244, 208, 63, 1.0);
+    border-right: 1px solid RGBA(244, 208, 63, 1.0);
+    border-left: 1px solid RGBA(244, 208, 63, 1.0);
+    border-top: 1px solid RGBA(244, 208, 63, 1.0);
+}
+
+
+.myW2WinSection .myW2TabPan {
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: none;
+}
+.myW2WinSection .myW2TabPan p {
+    margin-top: 10px;
+}
+.myW2WinSection .myW2TabPan p span{
+   font-size: 16px;
+   line-height: 1.2;
+   float: left;
+
+    
+}
+.myW2Btn {
+
+   height: 30px;
+   padding: 0 8px;
+   line-height: 30px;
+   text-align: center;
+   border-radius: 5px;
+   color: RGBA(200, 247, 197, 1.0);
+   border: 1px solid RGBA(27, 163, 156, 1.0);
+   background: RGBA(27, 163, 156, 1.0); 
+   cursor: pointer;
+   box-shadow: 0px 3px 8px 0px rgba(50, 50, 50, 0.38); 
+}
+
+.myW2Btn:hover {
+   background: RGBA(46, 204, 113, 1.0);
+   color: RGBA(236, 240, 241, 1.0);
+   border: 1px solid RGBA(46, 204, 113, 1.0); 
+}
+
+.myW2WinSection .myW2TabPan p{
+   
+   height: 20px;
+   
+}
+
+.myW2WinSection .myW2TabPan p .myW2ItemNameBtn{
+   margin-right: 15px;
+   float: right;
+   line-height: 30px;
+}
+
+
+.myW2WinSection .myW2TabPan p .myW2TabItemName{
+   
+    margin-left: 20px;
+    color: red;
+}
+
+.myW2WinSection .myW2TabPan p input{
+   width: 120px;
+   height: 30px;
+   border-radius: 5px;
+   padding-left: 10px;
+   font-size: 14px; 
+}
+
+.myW2WinSection .myW2TabPan.active {
+    display: block;
+}
+
+
+.myW2WinSection .myW2TabPan1 {
+    background: RGBA(200, 247, 197, 1.0);
+}
+
+.myW2Tab1Mess {
+    margin-top: 10px;
+}
+
+.myW2WinSection .myW2TabPan2 {
+    background: RGBA(134, 226, 213, 1.0);
+    padding-left: 0;
+}
+
+.myW2WinSection .myW2TabPan2 p span{
+    float: left;
+    margin-left: 10px;
+}
+
+.myW2WinSection .myW2TabPan2 .myW2ListIt{
+    background: RGBA(236, 240, 241, 1.0);
+    height: 30px;
+    padding-top: 5px;
+}
+.myW2WinSection .myW2TabPan2 .myW2ListIt .switch{
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: RGBA(27, 163, 156, 1.0);
+}
+
+.myW2WinSection .myW2TabPan2 .myW2ListIt .switch:hover{
+    color: RGBA(46, 204, 113, 1.0);
+}
+
+
+.myW2WinSection .myW2TabPan2 .myW2ListIt .myW2ListItBtn{
+   height: 20px;
+   line-height: 20px;  
+   margin-right: 20px;
+   float: right;
+}
+
+
+
+.myW2WinSection .myW2TabPan2 .myW2ListPanel {
+    width: 100%;
+    padding: 5px;
+    padding-left: 20px;
+    font-size: 14px;
+    display: none;
+}
+
+.myW2WinSection .myW2TabPan2 .myW2ListPanel.active {
+    display: block;
+}
+
+.myW2WinSection .myW2TabPan3 {
+     background: RGBA(244, 208, 63, 1.0);
+}
+
+
+.myW2Translate {
+    background: RGBA(171, 183, 183, 0.5);
+}
+
+.myW2Input {
+    background: RGBA(210, 215, 211, 0.5);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+
+
+.myW2WinSection textarea {
+
+    margin-left: 10px !important;
+    margin-top: 5px ;
+    width: calc(80% - 10px) !important;
+    min-height: 90px;
+    float: left;
+    padding: 5px 0 0 5px !important;
+   
+
+    resize: none;
+    border: none;
+    outline: none;
+
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+
+    background-color: transparent !important;
+
+}
+
+
+
+
+.myW2WinSection .myW2_controls {
+    
+    width: 42px;
+    float: right;
+
+}
+
+

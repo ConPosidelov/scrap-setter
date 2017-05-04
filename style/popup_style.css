@@ -1,0 +1,356 @@
+/*============= popap===========================*/
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v11/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+}
+.material-icons {
+  font-family: 'Material Icons' !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+.material-ic {
+   font-family: 'Material Icons' !important;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 22px; 
+}
+/*============= popap===========================*/
+.container {
+    width: 780px;
+    height: 600px;
+    padding-top: 5px;
+}
+
+
+.projContent {
+    margin-top: 10px;
+    width: 100%;
+}
+/*============= projCtrls===========================*/
+.projCtrls {
+    margin-top: 10px;
+    height: 80px;
+    width: 100%;
+
+}
+/*============= tab1_nav===========================*/
+.tab1_nav {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 30px;
+
+}
+.tab1_nav .play_ctr{
+   float: left;
+   margin-left: 5px;
+   height: 25px;
+   line-height: 25px;
+   padding: 0 5px; 
+}
+.tab1_nav .play_ctr i{
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+}
+
+.tab1_nav .play_state{
+   margin-top: 0px; 
+   float: left;
+   margin-left: 5px;
+   height: 25px; 
+}
+/*============= mess_tab1===========================*/
+.mess_tab1 {
+    display: none;
+    float: left;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.mess_tab1.active {
+    display: block;
+}
+.mess_tab1 h4{
+    float: left;
+    color: red;
+    margin: 0;
+    margin-top: 10px;
+}
+.mess_tab1 .btn_ok{
+    float: left;
+    margin-left: 20px;
+    margin-top: 7px;
+}
+.mess_tab1 .btn_no{
+    float: left;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+
+
+
+
+/*============= tab1_search===========================*/
+.tab1_search {
+   float: right;
+   margin-top: 10px;
+   margin-right: 30px; 
+    width: 120px;
+}
+
+.tab1_search .data_title {
+    position: relative;
+}
+
+.tab1_search .data_title:hover::after {
+    content: attr(data-title);
+    position: absolute; 
+    left: 50px; top: 50px;
+    z-index: 1; 
+    background: #ECF0F1;
+    width: 100px;
+    font-size: 15px;
+    padding: 10px;
+    box-shadow: -1px 1px 6px 0px #95A5A6;
+    border-radius: 5px;
+}
+
+
+
+
+.tab1_search .data_title .s_bykey{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+          
+    height: 25px;
+    width: 100%;
+    padding-left: 10px;
+
+    border-bottom: 1px solid #95A5A6;
+    border-left: 1px solid #95A5A6;
+    border-radius: 6px;
+    color: $info-icon_color;
+    font-size: 18px;
+    background: #ECF0F1;
+
+}
+.tab1_search .data_title .s_bykey:hover{
+    box-shadow: inset -1px 1px 6px 0px #95A5A6;
+    border-bottom: 1px solid  #95A5A6;
+    border-left: 1px solid  #95A5A6;
+}
+
+#searchBtn {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    z-index: 5;
+    font-size: 18px;
+    line-height: 18px;
+    background: transparent;
+    cursor: pointer;
+}
+/*============= tab1_titles_list===========================*/
+
+.tab1_titles_list {
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.tab1_titles_list .tab_title{
+    float: left;
+}
+.tab1_titles_list .tab_title h5{
+    float: left;
+}
+.tab1_titles_list .tab_title .btn{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 0 3px;
+}
+
+
+
+.tab1_titles_list .proj_title{
+    float: left;
+    margin-left: 42px;
+}
+.tab1_titles_list .url_title{
+    float: left;
+    margin-left: 53px;
+}
+
+.tab1_titles_list .name_title{
+    margin-left: 80px;
+    float: left;
+}
+.tab1_titles_list .cont_title{
+    margin-left: 67px;
+    float: left;
+}
+.tab1_titles_list .sel_title{
+    margin-left: 30px;
+    float: left;
+}
+.tab1_titles_list .ref_title{
+    margin-left: 30px;
+    float: left;
+}
+
+/*============= projContent recEls===========================*/
+.recEls {
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+    height: 25px;
+    font-size: 18px;
+    line-height: 25px;
+} 
+
+.recEls .recEl {
+    float: left;
+    margin-left: 10px;
+    
+    height: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.recEls .recEl-number {
+    width: 22px;
+    
+}
+
+.recEls .recEl-project {
+    width: 150px;
+    
+}
+
+.recEls .recEl-url {
+    width: 150px;
+    
+}
+
+.recEls .recEl-name {
+    width: 150px;
+    
+}
+
+.recEls .recEl-content {
+    padding: 0 5px;
+    
+}
+
+.recEls .recEl-ref {
+   margin-right: 10px;
+     float: right;
+}
+
+.recEls .recEl-sel {
+   margin-right: 40px; 
+    float: right; 
+} 
+
+.recEls .recEl-del {
+    float: right;
+   margin-right: 0px; 
+    
+}
+.recEls .hideEl {
+    display: none;
+    
+}
+.recEls .hideEl.active {
+    display: block;
+}
+
+.recEls .hideEl-ref {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 75%;
+    padding: 5px 10px;
+    z-index: 10;
+    background: #ECF0F1;
+    box-shadow: -3px 3px 50px 0px RGBA(30, 139, 195, 1.0);
+    
+}
+
+.recEls .hideEl-sel {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 75%;
+    padding: 5px 10px;
+    z-index: 10;
+    background: #ECF0F1;
+    box-shadow: -3px 3px 50px 0px RGBA(30, 139, 195, 1.0);
+}
+/*============= projContent recEls===========================*/
+.recEls .projEl-note {
+    float: right;
+    margin-right: 20px;
+
+}
+.recEls .projEl-save {
+    float: right;
+    margin-right: 20px;
+    
+}
+.recEls .projEl-path {
+    float: right;
+    margin-right: 20px;
+    padding-left: 10px;
+    font-weight: 300;
+    width: 150px;
+    border:1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
